@@ -2,10 +2,10 @@
   "name": "node_namu_darbai",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./back/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./app.js"
+    "start": "nodemon ./back/app.js"
   },
   "keywords": [],
   "author": "",
