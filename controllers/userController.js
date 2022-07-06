@@ -44,14 +44,14 @@ const loginUser = asyncHandler( async (req, res) => {
     const { email, password } = req.body;
 
     const user = await User.findOne({email});
-
-    if(user && password){
+//cia turi buti tikrinimas pagal token user&& compare password
+    if(user){
         res.json(
             {
                 _id: user.id,
                 name: user.name,
                 email: user.email,
-                password: user.password
+                //cia turi buti token
             } 
         )
     } else {
