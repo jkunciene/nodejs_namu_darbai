@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import transactionsService from '../services/transactionService';
 
 import { Table } from 'react-bootstrap';
+import NewTransaction from './NewTransaction';
 
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
@@ -39,6 +40,7 @@ console.log(transactions);
             </tr>))}
           </tbody>
       </Table>) : (<h3 className='text-center my-3'>You have not transactions</h3>)}
+      <NewTransaction getData={getData}/>
     </div>
   )
 }

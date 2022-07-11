@@ -1,13 +1,12 @@
-import { Container } from 'react-bootstrap';
-import './App.css';
-import NewTransaction from './components/NewTransaction';
 import Transactions from './components/Transactions';
+
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <Container>
       <Transactions/>
-      <NewTransaction/>
+      
     </Container>
   );
 }

@@ -5,7 +5,7 @@ import transactionsService from '../services/transactionService';
 import { Form, Button } from 'react-bootstrap';
 
 
-const NewTransaction = () => {
+const NewTransaction = ({getData}) => {
     const [text, setText ] = useState('');
     const [amount, setAmount] = useState('')
 
@@ -21,6 +21,7 @@ const NewTransaction = () => {
 
         setText('');
         setAmount('');
+        getData();
     }
   return (
     <div>
