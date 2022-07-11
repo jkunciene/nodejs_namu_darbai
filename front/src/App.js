@@ -1,11 +1,14 @@
+import { Container } from 'react-bootstrap';
 import './App.css';
+import NewTransaction from './components/NewTransaction';
 import Transactions from './components/Transactions';
 
 function App() {
   return (
-    <div>
+    <Container>
       <Transactions/>
-    </div>
+      <NewTransaction/>
+    </Container>
   );
 }
 
