@@ -6,7 +6,7 @@ const API_URL = '/api/transactions';
 const getTransactions = async()=>{
         try {
           const response = await axios.get(API_URL);
-          //console.log(response);
+         //console.log(response);
           return response;
         } catch (error) {
           console.error(error);
